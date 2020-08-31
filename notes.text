@@ -1,0 +1,30 @@
+Git - distributed version control system. 
+
+$ git init 
+// Initialize a local git repository
+
+$ git add <file> / .  
+// Add a file / all files to the staging area
+// Run as many times as you need to before committing, will keep files in the staging area
+
+$ git rm --cached <file>  
+// Remove a file from the staging area
+
+$ git status 
+// Check what you have in the staging area, will show differences between the working tree and the staging area
+
+$ git commit 
+// Takes everything from the staging area and adds it to the local repository
+
+$ git push
+// Pushes local repository into a remote repository
+
+$ git pull
+// Pull latest changes from the remote repository 
+
+$ git clone
+// Copy a remote repository into your local folder
+
+$ git config --global user.name "Your name"
+$ git config --global user.email "Your email"
+// Configure name and email
