@@ -25,7 +25,7 @@ $ git commit
 $ git commit -m "Your message"
 // Commit with message
 
-$ git commit -a --allow-empty-message -m " "
+$ git commit -a --allow-empty-message -m ""
 // Commit without message
 
 $ git push
