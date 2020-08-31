@@ -3,9 +3,15 @@ Git - distributed version control system.
 $ git init 
 // Initialize a local git repository
 
-$ git add <file> / .  
-// Add a file / all files to the staging area
+$ git add <file> 
+// Add a file to the staging area
 // Run as many times as you need to before committing, will keep files in the staging area
+
+$ git add .
+// Add all files to the staging area
+
+$ git add *.html
+// Add all html files to the staging area
 
 $ git rm --cached <file>  
 // Remove a file from the staging area
@@ -15,6 +21,12 @@ $ git status
 
 $ git commit 
 // Takes everything from the staging area and adds it to the local repository
+
+$ git commit -m "Your message"
+// Commit with message
+
+$ git commit -a --allow-empty-message -m " "
+// Commit without message
 
 $ git push
 // Pushes local repository into a remote repository
@@ -28,3 +40,37 @@ $ git clone
 $ git config --global user.name "Your name"
 $ git config --global user.email "Your email"
 // Configure name and email
+
+--------------------------------Branching--------------------------------
+
+$ git branch my-branch-name
+// Create a branch
+
+$ git branch
+// See local branches
+
+$ git branch -r
+// See remote branches 
+
+$ git branch -a
+// See all local and remote branches
+
+$ git checkout -b my-branch-name
+// Create and switch to a new local branch 
+
+$ git checkout my-branch-name
+// Switch to an existing local branch 
+
+$ git pull
+$ git checkout --track origin/my-branch-name
+// Switch to a branch that came from a remote repository
+
+$ git push 
+// Push to a branch if it already exists on the remore repository
+
+$ git push -u origin my-branch-name
+// Push to a branch if it doesn't yet exist on the remore repository
+
+
+
+
